@@ -1,50 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Single Price Grid Component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
-<body>
-  Join our community
 
-  30-day, hassle-free money back guarantee
+<body class="page">
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+  <div class="component page__component">
+    <article class="component__content">
+      <div class="container">
+        <article class="join">
+          <h1 class="title join__title">
+            Join our community
+          </h1>
 
-  Monthly Subscription
+          <p class="copy join__copy join__copy-highlight">
+            30-day, hassle-free money back guarantee
+          </p>
 
-  &dollar;29 per month
+          <p class="copy join__copy">
+            Gain access to our full library of tutorials along with expert code reviews.
+            Perfect for any developers who are serious about honing their skills.
+          </p>
+        </article>
 
-  Full access for less than &dollar;1 a day
+        <article class="subscription">
+          <h2 class="title subscription__title">
+            Monthly Subscription
+          </h2>
 
-  Sign Up
+          <p class="copy subscription__copy subscription__copy--price"><strong>&dollar;29</strong> per month</p>
 
-  Why Us
+          <p class="copy subscription__copy">
+            Full access for less than &dollar;1 a day
+          </p>
 
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">AX-d</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+
+          <button class="subscription__button">Sign Up</button>
+        </article>
+        <article class="why-us">
+          <h2 class="title why-us__title">
+            Why Us
+          </h2>
+
+          <ul class="list why-us__list">
+            <li class="list__item">
+              <a href="#" class="list__link">Tutorials by industry experts</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">Peer &amp; expert code review</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">Coding exercises</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">Access to our GitHub repos</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">Community forum</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">Flashcard decks</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">New videos every week</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </article>
+  </div>
+
+  <footer class="page__footer">
+    <div class="container">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">AX-d</a>.
+      </p>
+    </div>
   </footer>
 </body>
+
 </html>
