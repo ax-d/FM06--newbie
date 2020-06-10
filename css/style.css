@@ -8,17 +8,20 @@
   margin: 0 auto;
   padding: 0;
   font-family: 'Karla', sans-serif;
+  min-width: 375px;
 }
 
 .component {
   background: hsl(204, 43%, 93%);
   padding-bottom: 76px;
+  padding-top: 1px;
+  width: 100%;
 }
 
-.container {
+ .container {
   width: 83%;
   margin: 0 auto;
-}
+} 
 
 .title,
 .copy,
@@ -31,13 +34,15 @@
 
 /* start article - component */
 .component__content {
-  min-width: 375px;
+    min-width: 375px;  
   margin: 0 auto;
+  margin-top: 161px;
 }
 
-.container {
-  padding-top: 72px;
-}
+ .component__content .container {
+  box-shadow: 0px 0 20px 0px rgba(0,0,0,.3);
+  border-radius: 5px;
+} 
 
 .copy {
   font-size: .875rem;
@@ -53,7 +58,6 @@
 
 .join__title {
   font-size: 1.3125rem;
-  ;
   color: hsl(179, 62%, 43%);
   padding-top: 27px;
   margin-left: 23px;
@@ -180,7 +184,6 @@
     flex-wrap: wrap;
     width: 95%;
     max-width: 635px;
-    padding-top: 162px;
   }
 
   .join {
